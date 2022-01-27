@@ -118,3 +118,5 @@ context.fill();
 }
 setInterval(vibrate, 0);
 };
+
+//CANE PAZZO
