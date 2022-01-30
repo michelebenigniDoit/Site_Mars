@@ -12,12 +12,28 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/style.css" />
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.12/p5.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.12/addons/p5.dom.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.12/addons/p5.sound.min.js"
+    ></script>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+    </style>
   </head>
   <body>
-    <canvas id = 'canvas'></canvas>
-    <div id="sfumature">
-      <div class="sfumature__1"></div>
-    </div>
+
     <!-- navigation -->
     <nav class="navigation">
       <a class="navigation__marsTravel" href="">Mars Travel</a>
@@ -48,12 +64,32 @@
           Enjoy Marsian trip.
         </p>
         <a href="" class="hero__info__buyTickets">
-            <p>Buy tickets</p>
-            <div class="hero__info__buyTickets__arrow"></div>
-            <div class="hero__info__buyTickets__ellipse"></div>
+          <p>Buy tickets</p>
+          <div class="hero__info__buyTickets__arrow"></div>
+          <div class="hero__info__buyTickets__ellipse"></div>
         </a>
       </div>
     </div>
- <script src="script.js"></script>
+
+    <!-- tickets -->
+
+    <div id="tickets">
+      <a  href="" class="tickets__card">
+        <p>Standard Ticket</p>
+        <h1>$1000000</h1>
+        <p>Disponibili: 100/100</p>
+      </a>
+      <a  href="" class="tickets__card">
+        <p>VIP Ticket</p>
+        <h1>$5000000</h1>
+        <p>Disponibili: 50/50</p>
+      </a>
+      <a  href="" class="tickets__card">
+        <p>Exclusive Ticket</p>
+        <h1>$10000000</h1>
+        <p>Disponibili: 10/10</p>
+      </a>
+    </div>
   </body>
+  <script id="sketch" type="text/javascript" src="sketch.js"></script>
 </html>
